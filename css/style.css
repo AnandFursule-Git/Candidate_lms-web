@@ -1095,7 +1095,11 @@ table td a {
     border: 1px solid #DEE3E6 !important;
     border-radius: 12px !important;
 }
-
+.faq-accordion-btn {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important; 
+}
 /* Feedback */
 
 .feedback-title h5 {

@@ -123,5 +123,16 @@
         font-size: 14px;
     }
 
+    /*FAQ */
+    .tab-links ul li a {
+        font-size: 14px;
+    }
+    .faq-tab-btn {
+        font-size: 18px !important;
+    }
+    .faq-accordion-btn {
+        font-size: 14px !important;
+       
+    }
 
 }
