@@ -249,11 +249,11 @@ img {
 .course-count {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px
+    margin-bottom: 24px
 }
 
 .course-count .count {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 36px;
     font-weight: 600;
     font-family: "ES Rebond Grotesque TRIAL";
@@ -563,6 +563,9 @@ img {
 }
 
 .course-info img {
+    margin-right: 8px;
+}
+.course-info-expired  img {
     margin-right: 8px;
 }
 
@@ -952,7 +955,7 @@ table td a {
     color: #94a3ae;
 }
 
-.banner-tabs .tabs {
+.tabs-banner .tabs {
     padding: 8px 16px;
     border: 1px solid #FFFFFF33;
     font-size: 14px;
@@ -1165,12 +1168,16 @@ table td a {
     font-weight:600;
     font-family: "Raleway";
 }
+
 .question p{
     color: #1D3C55;
     font-size: 16px;
     line-height: 24px;
     font-weight:500;
     
+}
+.prev-nxt-btn {
+    margin-top: 24px;
 }
 .previous-btn {
     padding: 8px 12px;
