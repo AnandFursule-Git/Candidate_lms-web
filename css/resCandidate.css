@@ -9,6 +9,16 @@
     .course-text .text{
         font-size: 16px;
     }
+
+    /* Courses */ 
+
+
+    .offer .discount {
+        font-size: 18px;
+    }
+    .offer .mrp{
+        font-size: 18px;
+    }
     
     /* Feedback */ 
 
@@ -51,7 +61,7 @@
     }
 
     .faq-banner-search {
-        width: 780px;
+        width: 100%;
     }
     .tabs-banner .tabs  {
         font-size: 10px;
@@ -62,6 +72,15 @@
     .card-links a {
         font-size: 14px;
     }
+    
+    .settting-title h2 { 
+        font-size: 26px;
+    }
+
+
+
+
+
 
 
 
@@ -134,5 +153,8 @@
         font-size: 14px !important;
        
     }
+
+
+    
 
 }
