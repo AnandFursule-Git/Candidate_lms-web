@@ -154,6 +154,14 @@
        
     }
 
+    /* Setting-Devices-&-Activities */
+
+
+    .signout-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        width: 100px;
+    }
 
     
 
