@@ -171,16 +171,16 @@
                           <span>Privacy & Security</span>
                         </a>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="setting-notification.html">
-                          <img src="images/sidebar-Notification-bell.svg    " alt="Notification-Icon" />
-                          <span>Notifications</span>
+                          <img src="images/Notification-bell.svg" alt="Notification-Icon" />
+                          <span class="active">Notifications</span>
                         </a>
                       </li>
-                      <li class="menu-item active">
+                      <li class="menu-item">
                         <a href="devices-activities.html">
-                          <img src="images/Devices-Activities.svg" alt="Devices-Icon" />
-                          <span class="active">Devices & Activities</span>
+                          <img src="images/sidebar-Devices-Activities.svg" alt="Devices-Icon" />
+                          <span>Devices & Activities</span>
                         </a>
                       </li>
                     </ul>
@@ -191,59 +191,122 @@
         <div class="col-md-9">
           <div class="title mb-4">
             <div class="title-text">
-              <h2 class="mb-0">Devices & Activities</h2>
+              <h2 class="mb-0">Notifications</h2>
             </div>
           </div>
           
-          <div class="devices-activities-section-content">
-            <div class="row devices-activities-section-one">
-              <div class="col-sm-6 devices-activities-text">
-                <h5>Device Management</h5>
-                <p>Authorize devices with access to your account.</p>
+          <div class="notification-section-content">
+            <div class="row notification-section-one">
+              <div class="col-sm-6 notification-text">
+                <h5>Email Notifications</h5>
+                <p>Choose which updates you want to receive via email.</p>
               </div>
-              <div class="col-sm-6 devices-activities ">
-                  <div class="session-container">
-                      <img src="images/Safari.svg" alt="Safari Icon" class="browser-icon">
-                      <div class="session-info">
-                      <div class="browser-name">
-                          Safari <span class="current-session">• Current session</span>
+              <div class="col-sm-6 notification-switch ">
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Account activity notifications
                       </div>
-                      <div class="session-details">
-                          January 10, 2025 • Pune, Maharashtra, India
-                      </div>
-                      </div>
-                      <button class="signout-btn">Sign Out</button>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
                   </div>
-                  <div class="session-container">
-                      <img src="images/chrome.svg" alt="Safari Icon" class="browser-icon">
-                      <div class="session-info">
-                      <div class="browser-name">
-                          Chrome
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Course updates and recommendations
                       </div>
-                      <div class="session-details">
-                          January 10, 2025 • Pune, Maharashtra, India
-                      </div>
-                      </div>
-                      <button class="signout-btn">Sign Out</button>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
                   </div>
-                  <div class="session-container">
-                      <img src="images/firefox.svg" alt="Safari Icon" class="browser-icon">
-                      <div class="session-info">
-                      <div class="browser-name">
-                          Firefox
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Course updates 
+                          
                       </div>
-                      <div class="session-details">
-                          January 10, 2025 • Pune, Maharashtra, India
-                      </div>
-                      </div>
-                      <button class="signout-btn">Sign Out</button>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
                   </div>
+                  <p>
+                      We recommend enabling account activity notifications for your security.
+                  </p>
                   </div>
               
             </div>
-           
-            
+            <div class="row notification-section-two">
+              <div class="col-sm-6 notification-text">
+                <h5>SMS Notifications</h5>
+                <p>Manage alerts sent to your phone via SMS.</p>
+              </div>
+              <div class="col-sm-6 notification-switch ">
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Payment reminders
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Account recovery alerts
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Community updates 
+                          
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                  <p>
+                      Learn more about how we handle your data in our <span class="privacy-policy">Privacy Policy.</span> 
+                  </p>
+                  </div>
+              
             </div>
+            <div class="row notification-section-three">
+              <div class="col-sm-6 notification-text">
+                <h5>Push Notifications</h5>
+                <p>Controls which notifications you receive on your mobile app.</p>
+              </div>
+              <div class="col-sm-6 notification-switch ">
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Course reminders
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Instructor messages
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                  <div class="notification">
+                      <div class="notification-switch-text">
+                          Rewards and achievements 
+                          
+                      </div>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        </div>
+                  </div>
+                 
+                  </div>
+              
+            </div>
+            
+            </div>  
 
          
         </div>

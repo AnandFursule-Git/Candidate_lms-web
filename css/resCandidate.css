@@ -15,10 +15,10 @@
     /* Courses */ 
 
 
-    .offer .discount {
+ .main-price {
         font-size: 18px;
     }
-    .offer .mrp{
+   .strike-price{
         font-size: 18px;
     }
     
@@ -62,8 +62,8 @@
         font-size: 32px;
     }
 
-    .faq-banner-search {
-        width: 100%;
+    .banner-search {
+        padding: 0px 30px 0px 30px;
     }
     .tabs-banner .tabs  {
         font-size: 10px;

@@ -172,7 +172,7 @@
                                         </a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="notification.html">
+                                        <a href="setting-notification.html">
                                             <img src="images/sidebar-Notification-bell.svg    "
                                                 alt="Notification-Icon" />
                                             <span>Notifications</span>
@@ -197,23 +197,7 @@
                     </div>
 
                     <div class="seafarers-section-content d-flex flex-column gap-4">
-                        <div class="coc-validity d-flex justify-content-between">
-                            <div class="validity-text">
-                                <p class="mb-0">🎉30 days left from now, your COC will get expired</p>
-                            </div>
-                            <div class="cross">
-                                <img src="images/cancel-cross.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="coc-expiry d-flex justify-content-between align-items-center">
-                            <div class="expiry-text">
-                                <p class="mb-0">🎉Your COC has been expired, please upload the document to access the courses.</p>
-                            </div>
-                            <div class="upload-btn">
-                                <a href="#" role="button"><img src="images/upload.svg" alt=""> Upload</a>
-                            </div>
-                            <img src="images/cancel-cross.svg" alt="">
-                        </div>
+                        <div id="liveAlertPlaceholder" class="rounded-5"></div>
                         <div class="row seafarers-section-one">
                             <div class="col-sm-6 mb-3">
                                 <div class="seafarers-info d-flex flex-column">
@@ -273,12 +257,24 @@
                             </div>
                             <div class="col-sm-6 mb-2">
                                 <div class="seafarers-info verified-input d-flex flex-column">
+
                                     <label for="COC" class="form-label">COC</label>
                                     <input type="text" id="Input-COC" class="input-field"
                                         placeholder="Enter Your COC" />
-                                        <span class="verified">Verified</span>
+                                    <a class="verified" id="liveAlertBtn" role="button">Verify</a>
                                     <div class="form-text" id="basic-addon4">5 years left from now</div>
 
+                                </div>
+                            </div>
+
+                            <div class="general-footer">
+                                <div class="footer-btn">
+                                    <button class="btn-cancel">
+                                        Cancel
+                                    </button>
+                                    <button class="btn-savechanges">
+                                        Save Changes
+                                    </button>
                                 </div>
                             </div>
 
@@ -603,6 +599,39 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
+        const appendAlert = (message, type) => {
+            // Clear any existing alerts
+            alertPlaceholder.innerHTML = '';
+
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                <div>${message}</div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+
+            alertPlaceholder.append(wrapper);
+        };
+
+        const alertTrigger = document.getElementById('liveAlertBtn');
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('30 days left from now, your COC will get expired', 'warning');
+                // Change the text from "Verify" to "Verified"
+                alertTrigger.innerText = "Verified";
+
+                // Optional: Disable the button after verification
+                alertTrigger.classList.add('disabled');
+                alertTrigger.style.pointerEvents = "none"; // Prevent further click
+            });
+        }
+
+    </script>
 </body>
+
 
 </html>
