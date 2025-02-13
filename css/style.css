@@ -1001,8 +1001,15 @@ table td a {
     font-weight: 600;
 }
 
+/* Default cursor */
+body {
+    cursor: auto;
+}
 
-
+/* Change cursor to cross when offcanvas is open and hovering over body */
+body.offcanvas-open {
+    cursor: not-allowed;
+}
 
 
 
@@ -1278,8 +1285,18 @@ table td a {
     font-weight:500;
     
 }
-.prev-nxt-btn {
-    margin-top: 24px;
+
+.prev-nxt-btn2 {
+    margin-top: 26px;
+}
+.prev-nxt-btn3 {
+    margin-top: 10px;
+}
+.prev-nxt-btn4 {
+    margin-top: 10px;
+}
+.prev-nxt-btn5 {
+    margin-top: 17px;
 }
 .previous-btn {
     padding: 8px 12px;
@@ -2189,7 +2206,25 @@ background-color:#FFFFFF;
     font-weight: 500;
     color: #768998;
 }
-
+.filter-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color:#FFFFFF;
+}
+.filter-btn button  {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #011B30;  
+    background: none ;
+    border: none;
+    
+}
+.dropdown-item:active {
+    background-color: #FAFBFB !important;
+    color: #1D3C55 !important;
+}
 .payment-history-download-btn  {
     padding: 12px 16px;
     border: 1px solid #DEE3E6;
@@ -2259,23 +2294,15 @@ background-color:#FFFFFF;
     font-weight: 600;
     color: #E53A3A;
 }
-.upload-btn {
-    padding: 12px 16px;
-    background-color:#03599F ;
-    border-radius: 12px;
-}
-.upload-btn a{
+.upload-btn .btn {
+    background-color:#03599F !important;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     color: #FAFBFB;
-    text-decoration: none;
 }
-.upload-btn:hover {
-    background-color: #047fe3;
-}
-.upload-btn:active {
-    background-color: #02477f;
+.upload-btn .btn:hover {
+    color: #FAFBFB !important;
 }
 
 .seafarers-info .form-text {
@@ -2284,7 +2311,7 @@ background-color:#FFFFFF;
     font-weight: 500;
     color: #768998;
 }
-.verified-input {
+.verify-input {
     position: relative;
 }
 

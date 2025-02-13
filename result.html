@@ -248,7 +248,8 @@
                         <div class="row course-card gy-4">
                             <div class="card card-table">
                                 <div class="card-body">
-                                    <table class="table align-middle table-bordered rounded-3 overflow-hidden" id="result_table">
+                                    <table class="table align-middle table-bordered rounded-3 overflow-hidden"
+                                        id="result_table">
                                         <thead>
                                             <tr class="text-start">
                                                 <th class="min-w-40px">Sr. No.</th>
@@ -352,8 +353,8 @@
                                                         class="badge bg-success-subtle border border-success text-success">Competent</span>
                                                 </td>
                                                 <td><a href="" data-bs-toggle="offcanvas"
-                                                    data-bs-target="#offcanvasRight"
-                                                    aria-controls="offcanvasRight">Attempts</a></td>
+                                                        data-bs-target="#offcanvasRight"
+                                                        aria-controls="offcanvasRight">Attempts</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -660,7 +661,7 @@
     <!-- Result-Attempts-Offcanvas -->
 
     <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-       
+
         <div class="offcanvas-body">
             <div class="attempt-drawer d-flex flex-column gap-3">
                 <div class="card">
@@ -746,7 +747,7 @@
                     <div class="attempts-done d-flex align-items-start gap-2">
                         <div class="attempt d-flex flex-column align-items-center gap-1">
                             <img src="images/Check Circle - Failed.svg" alt="attempt-img">
-                           
+
                         </div>
                         <div class="attempt-text">
                             <div class="attempt-date">
@@ -773,6 +774,34 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const offcanvas = document.getElementById("offcanvasRight");
+
+    offcanvas.addEventListener("shown.bs.offcanvas", () => {
+        document.body.classList.add("offcanvas-open"); // Change cursor on body
+    });
+
+    offcanvas.addEventListener("hidden.bs.offcanvas", () => {
+        document.body.classList.remove("offcanvas-open"); // Reset cursor when closed
+    });
+
+    // When hovering over the offcanvas, reset cursor to normal
+    offcanvas.addEventListener("mouseenter", () => {
+        document.body.style.cursor = "auto";
+    });
+
+    // When leaving the offcanvas, apply the cross cursor again
+    offcanvas.addEventListener("mouseleave", () => {
+        if (document.body.classList.contains("offcanvas-open")) {
+            document.body.style.cursor = "url('/images/close.svg'), auto";
+        }
+    });
+});
+
+    </script>
+
 </body>
 
 </html>
