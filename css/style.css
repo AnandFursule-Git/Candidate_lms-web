@@ -168,7 +168,7 @@ img {
     gap: 16px;
 }
 
-.active {
+.sidebar-active {
     background-color: #DDEFFE80;
     color: #03599F !important;
     font-size: 16px;
@@ -515,7 +515,7 @@ img {
 
 
 .training-search {
-    background-image: url(/images/training-search.svg);
+    background-image: url('/images/training-search.svg');
     background-repeat: no-repeat;
     background-position: 10px 10px;
 
@@ -750,27 +750,18 @@ img {
 
 /* Courses */
 
-    .course-category {
-    padding: 8px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 500;
-    color: #1D3C55;
-    border: 1px solid #DEE3E6;
-    border-radius: 100px;
-}
-
-.course-tabs {
-    margin-bottom: 24px;
-}
-
-.course-tab-active {
-    background-color: rgba(255, 243, 227, 0.5);
-}
-
-.course-box {
-    text-decoration: none;
-}
+ .course-tab {
+   
+    border-radius: 100px !important;
+    border: 1px solid #DEE3E6 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    color: #1D3C55 !important;
+ }
+ .nav-pills .nav-link.active {
+    background-color: #FFF3E380 !important;
+ }
  
 .info-hdg {
     color: #011B30;
@@ -1001,18 +992,9 @@ table td a {
     font-weight: 600;
 }
 
-/* Default cursor */
-body {
-    cursor: auto;
+.offcanvas-backdrop {
+    cursor: url('/images/cancel-01.svg'), auto;
 }
-
-/* Change cursor to cross when offcanvas is open and hovering over body */
-body.offcanvas-open {
-    cursor: not-allowed;
-}
-
-
-
 
 
 

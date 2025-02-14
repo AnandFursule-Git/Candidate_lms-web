@@ -169,10 +169,10 @@
                                                 <span>Exam</span>
                                             </a>
                                         </li>
-                                        <li class="menu-item active">
+                                        <li class="menu-item sidebar-active">
                                             <a href="result.html">
                                                 <img src="images/result.svg" alt="results-icon" />
-                                                <span class="active">Results</span>
+                                                <span class="sidebar-active">Results</span>
                                             </a>
                                         </li>
                                         <li class="menu-item">
@@ -660,8 +660,7 @@
 
     <!-- Result-Attempts-Offcanvas -->
 
-    <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-body">
             <div class="attempt-drawer d-flex flex-column gap-3">
                 <div class="card">
@@ -775,33 +774,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
-    const offcanvas = document.getElementById("offcanvasRight");
-
-    offcanvas.addEventListener("shown.bs.offcanvas", () => {
-        document.body.classList.add("offcanvas-open"); // Change cursor on body
-    });
-
-    offcanvas.addEventListener("hidden.bs.offcanvas", () => {
-        document.body.classList.remove("offcanvas-open"); // Reset cursor when closed
-    });
-
-    // When hovering over the offcanvas, reset cursor to normal
-    offcanvas.addEventListener("mouseenter", () => {
-        document.body.style.cursor = "auto";
-    });
-
-    // When leaving the offcanvas, apply the cross cursor again
-    offcanvas.addEventListener("mouseleave", () => {
-        if (document.body.classList.contains("offcanvas-open")) {
-            document.body.style.cursor = "url('/images/close.svg'), auto";
-        }
-    });
-});
-
-    </script>
-
+ 
 </body>
 
 </html>
