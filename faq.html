@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Candidate Panel</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/candidate.css" />
     <link rel="stylesheet" href="css/resCandidate.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -109,8 +109,8 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item" href="general.html">Settings</a></li>
+                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                    <li><a class="dropdown-item" href="general.html">Settings </a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -227,136 +227,481 @@
                                             placeholder="Search...">
                                     </div>
 
-                                    <div class="tabs-banner d-flex align-items-center justify-content-center gap-2">
-                                        <div class="tabs">My Account</div>
-                                        <div class="tabs">Trading</div>
-                                        <div class="tabs">Charges / Plans</div>
-                                        <div class="tabs">Trading</div>
-                                        <div class="tabs">Charges / Plans</div>
-                                        <div class="tabs">Trading</div>
-                                        <div class="tabs">Trading</div>
-                                        <div class="tabs">Charges / Plans</div>
+
+                                    <div class="tabs-banner d-flex align-items-center justify-content-center ">
+                                        <ul class="nav nav-pills    gap-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs active" id="pills-MyAccount-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-MyAccount"
+                                                    type="button" role="tab" aria-controls="pills-MyAccount"
+                                                    aria-selected="true">My Account</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-Trading-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-Trading" type="button"
+                                                    role="tab" aria-controls="pills-Trading"
+                                                    aria-selected="false">Trading</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-ChargesPlans-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-ChargesPlans"
+                                                    type="button" role="tab" aria-controls="pills-ChargesPlans"
+                                                    aria-selected="false">Charges / Plans</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-Training-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-Training" type="button"
+                                                    role="tab" aria-controls="pills-Training"
+                                                    aria-selected="false">Training</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-payments-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-payments"
+                                                    type="button" role="tab" aria-controls="pills-payments"
+                                                    aria-selected="true">Payments</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-PrivacySecurity-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-PrivacySecurity" type="button"
+                                                    role="tab" aria-controls="pills-PrivacySecurity"
+                                                    aria-selected="false">Privacy & Security</button>
+                                            </li>
+                                            
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link tabs" id="pills-Courses-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-Courses"
+                                                    type="button" role="tab" aria-controls="pills-Courses"
+                                                    aria-selected="false">Courses</button>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-
-
                             </div>
-
                         </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-MyAccount" role="tabpanel"
+                                aria-labelledby="pills-MyAccount" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">My Account</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Trading</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Futures & Options</a>
+                                                    <a href="faq2.html">Strategy Bot</a>
+                                                    <a href="faq2.html">Equity</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Charges / Plans</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">My Account</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Trading</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Futures & Options</a>
+                                                    <a href="faq2.html">Strategy Bot</a>
+                                                    <a href="faq2.html">Equity</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Charges / Plans</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Trading" role="tabpanel"
+                                aria-labelledby="pills-Trading-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Trading</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Futures & Options</a>
+                                                    <a href="faq2.html">Strategy Bot</a>
+                                                    <a href="faq2.html">Equity</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Trading</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Futures & Options</a>
+                                                    <a href="faq2.html">Strategy Bot</a>
+                                                    <a href="faq2.html">Equity</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ChargesPlans" role="tabpanel"
+                                aria-labelledby="pills-ChargesPlans-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Charges / Plans</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Charges / Plans</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Charges / Plans</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-
-
-                        <div class="row  gy-4">
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">My Account</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Account Opening</a>
-                                            <a href="">Account Reactivation</a>
-                                            <a href="">Login And Password Reset</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Training" role="tabpanel"
+                                aria-labelledby="pills-Training-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Training</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Training</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Trade Free Youth Plan</a>
+                                                    <a href="faq2.html">Trade Free Plan</a>
+                                                    <a href="faq2.html">Trade Free Pro Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Trading</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Futures & Options</a>
-                                            <a href="">Strategy Bot</a>
-                                            <a href="">Equity</a>
+                            <div class="tab-pane fade" id="pills-payments" role="tabpanel"
+                                aria-labelledby="pills-payments-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Payments</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Charges / Plans</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Trade Free Youth Plan</a>
-                                            <a href="">Trade Free Plan</a>
-                                            <a href="">Trade Free Pro Plan</a>
-                                        </div>
-                                    </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">My Account</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Account Opening</a>
-                                            <a href="">Account Reactivation</a>
-                                            <a href="">Login And Password Reset</a>
-                                        </div>
-                                    </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Payments</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Trading</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Futures & Options</a>
-                                            <a href="">Strategy Bot</a>
-                                            <a href="">Equity</a>
+                            <div class="tab-pane fade" id="pills-PrivacySecurity" role="tabpanel"
+                                aria-labelledby="pills-PrivacySecurity-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Privacy & Security</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Privacy & Security</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Privacy & Security</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 custom-col">
-                                <div class="card faq-card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Charges / Plans</h5>
-                                        <div class="card-links d-flex flex-column gap-2">
-                                            <a href="">Trade Free Youth Plan</a>
-                                            <a href="">Trade Free Plan</a>
-                                            <a href="">Trade Free Pro Plan</a>
+                            <div class="tab-pane fade" id="pills-Courses" role="tabpanel"
+                                aria-labelledby="pills-Courses-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Courses</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="footer-card  d-flex align-items-center justify-content-between">
-                                        <a href="faq2.html" class="view">View more</a>
-                                        <div class="right-arrow">
-                                            <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Courses</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card faq-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Courses</h5>
+                                                <div class="card-links d-flex flex-column gap-2">
+                                                    <a href="faq2.html">Account Opening</a>
+                                                    <a href="faq2.html">Account Reactivation</a>
+                                                    <a href="faq2.html">Login And Password Reset</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-card  d-flex align-items-center justify-content-between">
+                                                <a href="faq2.html" class="view">View more</a>
+                                                <div class="right-arrow">
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

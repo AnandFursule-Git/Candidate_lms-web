@@ -920,6 +920,9 @@ table td a {
     padding: 8px 12px;
     gap: 8px;
 }
+.nav-link:focus-visible {
+    box-shadow: none !important;
+}
 
 .text-status {
     font-size: 14px;
@@ -1016,11 +1019,9 @@ table td a {
     font-family: "ES Rebond Grotesque TRIAL" !important;
     color: #FAFBFB;
 }
-
 .banner-search {
-    padding: 0px 16px 0px 16px;
+    padding: 0px 40px 0px 40px;
 }
-
 .faq-banner-search {
     background-color: transparent;
     background-image: url(/images/training-search.svg);
@@ -1045,8 +1046,17 @@ table td a {
     font-weight: 500;
     color: #FAFBFB;
     background-color: #DDEFFE1A;
-    border-radius: 100px;
+    border-radius: 100px !important;
+    background-color: #DDEFFE1A !important;
 }
+.nav-pills .tabs.active {
+    background-color: #FFF3E380 !important;
+    color: #011B30 !important ;
+ }
+ .tabs:hover {
+    color:#FAFBFB!important;
+ }
+
 
 .card-title {
     margin-bottom: 16px !important;
